@@ -1,0 +1,145 @@
+/*--------------header-----------------*/
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 13em;
+} 
+.text-box p{
+    margin: 10px 0 20px;
+    font-size: 22px;    
+    color: #e2daa8;
+}
+
+/*--------------button setting-----------------*/
+.hero-btn{ 
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #555;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: rgb(118, 177, 255);
+    position: relative; 
+    cursor: pointer;
+}
+.hero-btn:hover{ 
+    border: 1px solid #f44336;
+    background: #f44336;
+    color: #fff;
+    transition: 1s;
+}
+
+/*--------------navbar-----------------*/
+.logo:hover, .icons a:hover{
+    opacity: 70%;
+    transition: 0.5s;
+}
+.logo{
+    padding: 15px;
+}
+.sidenav {
+    height: 100%;  
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+nav li{
+    width: 190px;
+    height: 60px;
+    padding:  20px 0 0 20px;
+    overflow: hidden;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.2em;   
+}
+nav a span{
+    font-size: 1.1em;
+    color: rgb(255, 226, 226);
+}
+nav a:link{
+    color: #fffadb;
+}
+nav a:visited{
+    color: #d2b48c;
+}
+nav a:hover{
+    color: #f74a4a;
+    font-size: 1.34em;
+    transition: 0.2s;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+} 
+#icon{
+    width: 32px;
+    cursor: pointer;
+    bottom: 10%;
+}
+#icon:hover, .cart-icon img:hover{
+    opacity: 80%;
+    width: 36px;
+    height: 33px;
+    transition: 0.1s;
+}
+.background-img{
+    background-image: linear-gradient(rgba(160, 163, 180, 0.7),rgba(15, 28, 85, 0.7),rgba(4, 11, 37, 0.7)),url(images/background/background.jpg);
+}
+@media only screen and (max-width: 887px){
+    h4{
+        white-space: normal;
+        overflow: visible;
+        padding: 0 80px;
+        width: auto;
+    }
+    .text-box{
+        font-size: 0.5em;
+    }
+    .body{
+        min-width: 0;
+    }
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .account-page{
+        max-height: 950px;
+    }
+} 
+@media only screen and (max-width: 1130px){
+    .contact-col{
+        flex-basis: 100%;
+    }
+    .text-box h1{
+        font-size: 10em;
+    }
+    .page-title p{
+        padding-right: 20px;
+    }
+}
